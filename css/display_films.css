@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+.my_container{
+    width: 1400px;
+    margin: 0 auto; /* Центрирует контейнер на странице */
+    /* background-color: #303030; Фоновый цвет контейнера (замените на ваш цвет) */
+    padding: 20px; /* Внутренний отступ контейнера */
+
+}
+.my_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Верхний отступ между header и main */
+}
+.my_item{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #525252; /* Фоновый цвет контейнера (замените на ваш цвет) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px
+}
+.my_item_image{
+    width: 100%;
+}
+body{
+    background-color: #303030; /* Фоновый цвет контейнера (замените на ваш цвет) */
+    font-family: 'Roboto';
+}
+
+.my_details-button {
+    background-color: #05c40f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;    
+}
+  
+.my_name-on-site {
+font-size: 18px;
+font-weight: bold;
+margin-top: 10px;
+color: aliceblue;
+font-size: 48px;
+}
+
+.description_film{
+    color: aliceblue;
+    font-size: 24px;
+}
+  
