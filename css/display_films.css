@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+.my_container{
+    /* width: 1400px; */
+    margin: 0 auto; /* Центрирует контейнер на странице */
+    /* background-color: #303030; Фоновый цвет контейнера (замените на ваш цвет) */
+    padding: 20px; /* Внутренний отступ контейнера */
+
+}
+.my_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Верхний отступ между header и main */
+}
+.my_item{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #525252; /* Фоновый цвет контейнера (замените на ваш цвет) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px
+}
+
+
+.my_item:hover {
+    transform: scale(1.02); /* Увеличиваем блок на 10% при наведении */
+    transition: transform 0.1s ease-in; /* Замедление при наведении курсора */
+}
+.my_item:not(:hover) {
+    transition: transform 0.1s ease-out; /* Замедление при убирании курсора */
+}
+
+
+
+.my_item_image{
+    width: 100%;
+}
+body{
+    background-color: #303030 !important; /* Фоновый цвет контейнера (замените на ваш цвет) */
+    font-family: 'Roboto';
+}
+
+.my_details-button {
+    background-color: #05c40f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;    
+}
+.my_details-button:hover{
+    transform: scale(1.02); /* Увеличиваем блок на 10% при наведении */
+    transition: transform 0.1s ease-in; /* Замедление при наведении курсора */
+}
+.my_details-button:not(:hover){
+    transition: transform 0.1s ease-out; /* Замедление при убирании курсора */
+}
+
+  
+.my_name-on-site {
+font-weight: bold;
+height: 80px;
+margin-top: 10px;
+color: aliceblue;
+font-size: 32px;
+}
+
+.description_film{
+    height: 150px;
+    color: aliceblue;
+    font-size: 24px;
+}
+.container_my{
+    width: 700px;
+    margin: 0 auto;
+    
+}
+
+footer 
+{
+     background-color: #333; color: #fff; padding: 10px; text-align: center; 
+    }
