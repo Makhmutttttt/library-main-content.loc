@@ -67,7 +67,7 @@
 
                 <div class="col-md-8 col-sm-12">
                         <div class="home-text">
-                            <h1>Читай и программируй</h1>
+                            <h1>Читай и развивайся</h1>
                             <p>Скачивай интересные книги</p>
                             <ul class="section-btn">
                                 <a href="#about" class="smoothScroll"><span data-hover="Discover More">Узнать больше</span></a>
@@ -146,7 +146,7 @@
                             
                                 <div class="project-overlay">
                                     <div class="project-info">
-                                            <h1>Стань программистом</h1>
+                                            <h1>Стань кем захочешь</h1>
                                             <h3>Изучай новое</h3>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@
                             
                                 <div class="project-overlay">
                                     <div class="project-info">
-                                            <h1>Программируй сейчас</h1>
+                                            <h1>Действуй сейчас</h1>
                                             <h3>Не теряй время</h3>
                                     </div>
                                 </div>
@@ -250,7 +250,7 @@
             // Database connection using MySQLi (Assuming you have a connection established)
             include 'config.php'; // Adjust this path as needed
 
-            $query = "SELECT id, name, cover_image, name_on_site, description_book, detals_about_book FROM upload";
+            $query = "SELECT id, name, content, cover_image, description_book, detals_about_book FROM upload";
             $result = $conn->query($query);
 
             if ($result === false) {
@@ -263,8 +263,8 @@
                 while ($row = $result->fetch_assoc()) {
                     $id = $row['id'];
                     $name = $row['name'];
+                    $content = $row['content'];
                     $coverImage = $row['cover_image'];
-                    $nameOnSite = $row['name_on_site'];
                     $description_book = $row['description_book'];
                     $detals_about_book = $row['detals_about_book'];
 
@@ -272,14 +272,14 @@
                     echo '<div class="my_item">';
                         
                         
-                        echo '<div class="my_name-on-site">'.$nameOnSite.'</div>';
+                        echo '<div class="my_name-on-site">'.$name.'</div>';
                         
                         if ($coverImage !== null) {
                             echo '<img src="'.$coverImage.'" alt="Cover Image" width="1000" class="my_item_image">';
                         }
                         echo '<div class="description_book">'.$description_book.'</div>';
                         
-                        echo '<a href="download.php?id='.$id.'"class="my_details-button">Download</a>';
+                        echo '<a href="'.$content.'"class="my_details-button">Почитать</a>';
                         
                     echo '</div>';
                     
