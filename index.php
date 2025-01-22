@@ -141,8 +141,8 @@
                 <div class="col-md-6 col-sm-6">
                         <!-- PROJECT ITEM -->
                         <div class="project-item">
-                            <a href="images/o.webp" class="image-popup">
-                                <img src="images/o.webp" class="item_mah" alt="">
+                            <a href="images/oo.webp" class="image-popup">
+                                <img src="images/oo.webp" class="item_mah" alt="">
                             
                                 <div class="project-overlay">
                                     <div class="project-info">
